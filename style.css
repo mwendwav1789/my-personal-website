@@ -1,3 +1,60 @@
+/* Global styles */
 body {
-    background: whitesmoke;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.logo h1 {
+  font-size: 2em;
+}
+
+/* Hero section */
+.hero {
+  background-color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.hero-content iframe {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #ccc;
+  margin: 1em 0;
+}
+
+/* Contact section */
+#contact {
+  background-color: #e9e9e9;
+  padding: 2em;
+  text-align: center;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact li {
+  margin: 0.5em 0;
+}
+
+
