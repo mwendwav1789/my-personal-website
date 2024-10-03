@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <h1>My Website</h1>
-        </div>
+      <div class="logo">
+        <h1>My Website</h1>
+      </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Welcome to my personal website</h2>
-            <p>This is the main page of my website.</p>
-            <iframe src="about.html" title="About Me"></iframe>
-            <iframe src="services.html" title="My Services"></iframe>
-            <iframe src="skills.html" title="My Skills"></iframe>
+      <div class="hero-content">
+        <h2>Welcome to My Personal Website!</h2>
+        <p>Explore my journey, skills, and services.</p>
+        <button onclick="scrollToSection('contact')">Get in Touch!</button>
+        <div class="iframes">
+          <iframe src="about.html" title="About Me"></iframe>
+          <iframe src="services.html" title="My Services"></iframe>
+          <iframe src="skills.html" title="My Skills"></iframe>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <ul>
-            <li>Email: vmwendwa87@gmail.com</li>
-            <li>Telephone Number: 0741727325</li>
-        </ul>
+      <h2>Contact Me</h2>
+      <ul>
+        <li>
+          Email: <a href="mailto:vmwendwa87@gmail.com">vmwendwa87@gmail.com</a>
+        </li>
+        <li>Telephone: <a href="tel:0741727325">0741727325</a></li>
+      </ul>
     </section>
 
-    <section>
-        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
-    </section>
-</body>
+    <footer>
+      <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function scrollToSection(sectionId) {
+        document
+          .getElementById(sectionId)
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
 </html>
